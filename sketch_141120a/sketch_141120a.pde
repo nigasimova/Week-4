@@ -4,12 +4,16 @@ float xSpeed = 5, ySpeed = 5;
 float gravity = 0.1;
 float braking = 0.09;
 
+void setup() {
+  size(480, 300);
+}
+
 void draw() {
 
   background(#92CFED);
   fill(216, 7, 21);
   ellipse(x, y, ballSize, ballSize);
-
+  
   y = y +ySpeed;
   x=x+xSpeed;
   ySpeed = ySpeed + gravity;
